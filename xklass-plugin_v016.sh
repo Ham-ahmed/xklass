@@ -9,13 +9,20 @@ wget -O /tmp/xklass-v016.tar.gz "https://gitlab.com/h-ahmed/Panel/-/raw/main/xkl
 tar -xzf /tmp/*.tar.gz -C /
 
 rm -r /tmp/xklass-v016.tar.gz
-
-echo "*******************************************"
-echo "*             install Finished            *"
-echo "*            Uploaded By H-Ahmed          *"
-echo "*******************************************"
-
+sleep 2;
+echo "" 
+echo "" 
+echo "*********************************************************"
+echo "#                   INSTALLED SUCCESSFULLY              #"
+echo "*                       ON - Panel                      *"
+echo "*                Enigma2 restart is required            *"
+echo "*********************************************************"
+echo "               UPLOADED BY  >>>>   HAMDY_AHMED           "
 sleep 4;
-echo ""
-echo ""
-exit
+	echo '================================================='
+###########################################                                                                                                                  
+echo ". >>>>         RESTARING     <<<<"
+echo "*********************************************************"
+wait
+killall -9 enigma2
+exit 0
